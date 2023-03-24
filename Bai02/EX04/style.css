@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+/* Header **/
+header {
+  padding-top: 30px;
+  min-height: 70px;
+  background-color: #458b74;
+  border-bottom: 5px solid #884dff;
+  position: relative;
+}
+
+header a {
+  color: red;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header li {
+  /* chỉnh li sang ngang */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+header #branding {
+  position: relative;
+  bottom: 15px;
+  color: #20b2aa;
+}
+
+header #branding h1 {
+  color: #20b2aa;
+}
+header nav {
+  list-style: none; /* loại bỏ dấu chấm của các list khi sử dụng none*/
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  left: 73%;
+  bottom: 15px;
+}
+
+header .highlight {
+  color: #0000cd;
+}
+header .current a {
+  color: rosybrown;
+}
+
+header a:hover {
+  background-color: rgba(124, 45, 34, 0.2);
+}
+
+footer {
+  background-color: #99cccc;
+
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  align-items: center;
+  min-height: 2px;
+  color: #ff0033;
+  position: relative;
+  top: 30px;
+}
+
+#newsletter form input[type="email"],
+.quote input,
+.quote textarea {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
