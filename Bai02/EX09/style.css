@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+/* Global */
+.container {
+  padding: 0 150px 10px 170px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.button_1 {
+  /* phần đắng kí */
+  height: 44px;
+  width: 68px;
+  background-color: #ff0000;
+  margin-top: initial;
+}
+
+.dark {
+  /* phần của nội dung của thông tin */
+  background-color: #00141a;
+  /*  margin-left:720px; */
+  color: white;
+  padding: 20px;
+}
+
+/* Header **/
+header {
+  padding-top: 20px;
+  min-height: 70px;
+  background-color: #00141a;
+  border-bottom: 2px solid #66d9ff;
+  position: relative;
+}
+
+header a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header li {
+  /* chỉnh li sang ngang */
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+header #branding {
+  position: relative;
+  bottom: 4px;
+  color: #20b2aa;
+}
+
+header #branding h1 {
+  color: #20b2aa;
+}
+
+header nav {
+  list-style: none; /* loại bỏ dấu chấm của các list khi sử dụng none*/
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  left: 66%;
+  bottom: 35px;
+}
+
+header .highlight,
+header .current a {
+  color: #ff0000;
+}
+
+header a:hover {
+  background-color: rgba(124, 45, 34, 0.2);
+}
+
+/* Showcase */
+#showcase {
+  padding-top: 1px;
+  width: 100%;
+  height: 425px;
+  background: url(https://corkprof.000webhostapp.com/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* căn giữa cả theo chiều ngang và chiều dọc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase h1 {
+  text-align: center;
+  color: whitesmoke;
+  background-position: center center;
+  margin: 0;
+  font-size: 50px;
+}
+
+#showcase p {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter {
+  background-color: #00141a;
+  padding-top: 5px;
+  min-height: 70px;
+  border-top: 2px solid #66d9ff;
+}
+
+#newsletter h1 {
+  color: white;
+  position: relative;
+  left: 12px;
+  top: 25px;
+}
+
+#newsletter form {
+  transform: translatey(-32px);
+  padding-left: 64%;
+}
+
+#newsletter input[type="email"] {
+  height: 35px;
+  width: 290px;
+}
+
+/* Boxes */
+#boxes {
+  margin-bottom: 30px;
+}
+
+#boxes .box {
+  display: inline-block; /* làm cho sang ngang */
+  text-align: center;
+  max-width: 350px;
+  padding-right: 15px;
+  font-size: 16.5px; /*cỡ chữ */
+  transform: translateY(100%);
+  position: relative;
+  bottom: 252px;
+}
+
+#boxes .box img {
+  height: 80px;
+  width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  max-width: 400px;
+  position: absolute;
+  right: 168px;
+  top: 260px;
+  width: 365px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 300px;
+  height: 30px;
+}
+
+/* Main-col */
+article#main-col {
+  max-width: 744px;
+}
+
+footer {
+  background-color: #00141a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 10px;
+  color: #0066ff;
+  position: relative;
+  top: 30px;
+  height: 100px;
+}
