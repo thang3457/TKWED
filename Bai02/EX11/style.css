@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  min-width: 30.1875em;
+}
+
+/* Global */
+.container {
+  margin: 0 150px 0 170px;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.button_1 {
+  height: 44px;
+  width: 90px;
+  background-color: #ff0000;
+  margin-top: initial;
+}
+
+.dark {
+  background-color: #00141a;
+  color: white;
+  padding: 20px;
+}
+
+/* Header **/
+header {
+  padding-top: 20px;
+  min-height: 90px;
+  background-color: #00141a;
+  border-bottom: 2px solid #66d9ff;
+  position: relative;
+}
+
+header a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header li {
+  display: inline-block; /* chỉnh li sang ngang */
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+header #branding {
+  position: relative;
+  bottom: 4px;
+  color: #20b2aa;
+}
+
+header #branding h1 {
+  color: #20b2aa;
+}
+
+header nav {
+  list-style: none; /* loại bỏ dấu chấm của các list khi sử dụng none*/
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  left: 66%;
+  bottom: 35px;
+}
+
+header .highlight,
+header .current a {
+  color: #ff0000;
+}
+
+header a:hover {
+  background-color: rgba(124, 45, 34, 0.2);
+}
+
+/* Showcase */
+#showcase {
+  height: 470px;
+  background: url(https://corkprof.000webhostapp.com/showcase.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; /* căn giữa cả theo chiều ngang và chiều dọc */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+}
+
+#showcase h1 {
+  text-align: center;
+  color: whitesmoke;
+  background-position: center center;
+  font-size: 50px;
+}
+
+#showcase p {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  min-width: 318px;
+}
+
+/* Newsletter */
+#newsletter {
+  background-color: #00141a;
+  padding-top: 5px;
+  min-height: 70px;
+  border-top: 2px solid #66d9ff;
+}
+
+#newsletter h1 {
+  color: white;
+  position: relative;
+  left: 12px;
+  top: 25px;
+}
+
+#newsletter form {
+  transform: translatey(-32px);
+  padding-left: 64%;
+}
+
+#newsletter input[type="email"] {
+  height: 35px;
+  width: 290px;
+}
+
+/* Boxes */
+#boxes {
+  margin-bottom: 30px;
+}
+
+#boxes .box {
+  display: inline-block; /* làm cho sang ngang */
+  text-align: center;
+  max-width: 350px;
+  padding-right: 23px;
+  font-size: 16.5px; /*cỡ chữ */
+  transform: translateY(100%);
+  position: relative;
+  bottom: 252px;
+  left: 25px;
+}
+
+#boxes .box img {
+  height: 80px;
+  width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  max-width: 400px;
+  position: absolute;
+  right: 190px;
+  top: 260px;
+  width: 365px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 300px;
+  height: 30px;
+}
+
+/* Main-col */
+article#main-col {
+  max-width: 744px;
+}
+
+/* Services */
+ul#services li {
+  background-color: rgba(211, 211, 211, 0.8);
+  border: 2px solid black;
+  margin-top: 5px;
+  padding: 18px;
+}
+
+footer {
+  background-color: #00141a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 10px;
+  color: #0066ff;
+  position: relative;
+  top: 20px;
+  height: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #branding {
+    text-align: center;
+    font-size: 10.8px;
+    top: 5px;
+    left: -5px;
+    transform: scale(1.5);
+  }
+  header nav {
+    text-align: center;
+    transform: translate(-190px, 16px);
+
+    width: 300px;
+  }
+  header nav li {
+    font-size: 10px;
+    transform: scale(1.5);
+    margin-right: 66px;
+  }
+  #newsletter h1 {
+    width: 244px;
+    font-size: 22px;
+    text-align: center;
+    left: -50px;
+    top: 22px;
+    height: 100px;
+    transform: scale(1.2);
+  }
+  #newsletter form {
+    transform: translate(-179px, -18px);
+    display: grid;
+    place-items: center;
+  }
+  #boxes .box {
+    display: block;
+    transform: unset;
+    top: 60px;
+    max-width: none;
+    left: -95px;
+    width: 346px;
+    font-size: 16px;
+    margin: -0 0 35px 0;
+    top: 20px;
+  }
+  article#main-col {
+    text-align: center;
+    width: 357px;
+    font-size: 17px;
+    margin-left: -104px;
+  }
+  aside#sidebar {
+    position: unset;
+    left: 10px;
+    width: 357px;
+    text-align: center;
+    margin: -5px 0 0 -105px;
+  }
+
+  header {
+    height: 10.9375em;
+  }
+}
